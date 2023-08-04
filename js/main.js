@@ -73,7 +73,7 @@ function validateSiteName(){
   
 }
 function validateSiteUrl(){
-   var regex =/^(https:\/\/www\.)[a-z0-9.@:%._\\\-+~#?&\/\/=]{3,}\.com(\/)?$/gmi
+   var regex =/^(https:\/\/)(www\.)?[a-z0-9.@:%._\\\-+~#?&\/\/=]{3,}\.com(\/)?$/gmi;
    if(regex.test(siteUrlInput.value)==true){
 siteUrlInput.style.border="none";
       return true;
