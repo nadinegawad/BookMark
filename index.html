@@ -30,7 +30,7 @@
     <div class=" mx-auto pb-2">
       <label id="wrongUrl" class="pb-2" for="siteUrl"><i class="fa-solid fa-link pe-2"></i> Site URL</label>
       <input oninput="validateSiteUrl()"  type="text" class="form-control" id="siteUrl" placeholder="Website URL">
-
+      <p   id ="urlPara"class="text-danger d-none">You must Start with (https://www) End with (.com)</p>
     </div>
     <div class="text-center">
       <button onclick="submit()" class="btn  px-5 my-3 btn-danger" id="submitBtn">Submit </button>
