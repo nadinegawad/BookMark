@@ -77,12 +77,11 @@ function validateSiteUrl(){
    var regex =/^(http(s):\/\/.)[-a-zA-Z0-9@:%.\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%\+.~#?&//=]*)$/gmi;
    if(regex.test(siteUrlInput.value)==true){
 siteUrlInput.style.border="none";
-document.getElementById("urlPara").classList.add("d-none")
+
 
       return true;
    }else{
    siteUrlInput.style.border ="5px solid red";
-   document.getElementById("urlPara").classList.remove("d-none")
       return false;
    
    }
